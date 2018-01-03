@@ -5,6 +5,11 @@ print "<div style='width: 1000px; margin-left: auto; margin-right: auto;'>";
 
 libxml_use_internal_errors(true);
 $myXMLData = (isset($_POST["text"])) ? $_POST["text"] : "";
+$converToUTF8 = (isset($_POST["utf8"])) ? $_POST["utf8"] : "";
+
+if($converToUTF8 == 1){
+	$myXMLData = utf8_encode($myXMLData);
+}
 
 print "<h1>SEPA XML PARSER</h1>";
 print "<span style='font-style: italic;'>Pay your taxes easier™</span>";
@@ -14,6 +19,9 @@ print "<h3>Insert your SEPA XML file's contents here</h3>";
 print "
 <form method='post'>
 <textarea name='text' style='width: 400px; height: 200px;'>$myXMLData</textarea>
+<br />
+<input type='checkbox' name='utf8' value='1' ".($converToUTF8 ? "checked" : "")."> Convert to utf8
+<br />
 <br />
 Disclaimer: If you actually somehow got to this page on your own and want to use this tool, be aware that the contents submitted above will be sent to our web server, unencrypted. 
 They are processed on our server and you get the results, again, unencrypted. We obviously don't store anything that comes in through this tool, as it's intended for internal use, but
