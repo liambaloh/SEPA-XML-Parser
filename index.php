@@ -12,7 +12,9 @@ if($converToUTF8 == 1){
 }
 
 print "<h1>SEPA XML PARSER</h1>";
-print "<span style='font-style: italic;'>Pay your taxes easier™</span>";
+print "<span style='font-style: italic;'>Pay your taxes easierâ„¢</span>";
+print "<p><span><a href='sepa_instance_parser/'>Instance SEPA XML parser</a></span></p>";
+print "<p>Which to use? Open the SEPA-XML file. Near the top it will either have http://www.w3.org/2001/XMLSchema or http://www.w3.org/2001/XMLSchema-instance. If it has XMLSchema-Instance, use the Instance SEPA XML parser, otherwise use this.";
 
 print "<br><br>";
 print "<h3>Insert your SEPA XML file's contents here</h3>";
