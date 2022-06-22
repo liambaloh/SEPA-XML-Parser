@@ -11,7 +11,7 @@ You will need a web server. On windows, simply use XAMPP. For other platforms in
 
 ## First time setup
 - Download and install XAMPP (https://www.apachefriends.org/)
-- Download (zip) or clone (git) this repository (https://github.com/balohmatevz/SEPA-XML-Parser)
+- Download (zip) or clone (git) this repository (https://github.com/liambaloh/SEPA-XML-Parser)
 - Open the folder: C:/xampp/htdocs
 - Create a new folder called "sepa"
 - Copy the file index.php from the downloaded repository into the folder "sepa".
@@ -28,4 +28,4 @@ You will need a web server. On windows, simply use XAMPP. For other platforms in
 - Stop Apache
 
 ## Problems?
-If you encounter a bug or have a feature request, please open an issue here: https://github.com/balohmatevz/SEPA-XML-Parser/issues. Thanks!
+If you encounter a bug or have a feature request, please open an issue here: https://github.com/liambaloh/SEPA-XML-Parser/issues. Thanks!
